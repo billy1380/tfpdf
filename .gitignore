@@ -1,3 +1,9 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+
 nbproject/
 build/
 nbbuild/
@@ -8,5 +14,10 @@ nb-configuration.xml
 vendor
 composer.lock
 tests/test_data/output.pdf
-
+/target/
 *.cw127.php
+.settings
+.project
+.classpath
+.DS_STORE
+/build/

@@ -1,4 +1,3 @@
-<?php
 /**
  * test_unicode.php
  *
@@ -6,8 +5,15 @@
  * @copyright Venditan Limited 2016
  */
 
-require_once __DIR__ . '/../vendor/autoload.php';
+package tfpdf.cmd;
 
+require_once __DIR__.'/../vendor/autoload.php';
+
+class TestUnicode {
+
+	public static void main (String[] args) {
+		
+	
 $obj_pdf = new \tFPDF\PDF();
 $obj_pdf->AddPage();
 $obj_pdf->AddFont('DejaVuSans', '', 'DejaVuSans.ttf', true);
@@ -20,3 +26,6 @@ $str_file = sys_get_temp_dir() . '/tfpdf_unicode_test.pdf';
 file_put_contents($str_file, $obj_pdf->output());
 
 echo "Written file " . $str_file . PHP_EOL;
+
+	}
+}

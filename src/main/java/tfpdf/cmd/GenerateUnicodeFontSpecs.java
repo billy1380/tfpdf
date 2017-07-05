@@ -1,4 +1,3 @@
-<?php
 /**
  * generate_unicode_font_specs.php
  *
@@ -6,9 +5,15 @@
  * @copyright Venditan Limited 2016
  */
 
-require_once __DIR__ . '/../vendor/autoload.php';
+package tfpdf.cmd;
 
-$str_search = __DIR__ . "/../src/font/unifont/*.ttf";
+require_once __DIR__.'/../vendor/autoload.php';
+
+class GenerateUnicodeFontSpecs {
+
+	$str_search=__DIR__."/../src/font/unifont/*.ttf";
+
+public static void main (String[] args) {
 
 $arr_fonts = glob($str_search);
 
@@ -54,3 +59,5 @@ foreach ($arr_fonts as $str_font_filename) {
     }
 }
 echo "Generated " . $int_generated . " font spec files\n";
+}
+}

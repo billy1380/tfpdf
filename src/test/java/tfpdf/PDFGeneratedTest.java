@@ -6,7 +6,7 @@ define('FPDF_FONT_WRITE_PATH', __DIR__ . '/../build/');
 
 class PDFGeneratedTest extends TestCase
 {
-    public function testFileIsGenerated()
+    public void testFileIsGenerated()
     {
         $pdfLibrary = new tFPDF\PDF();
 

@@ -1,3 +1,4 @@
+package tfpdf;
 <?php
 
 namespace tFPDF;
