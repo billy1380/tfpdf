@@ -1,8 +1,6 @@
-<?php
+package tfpdf;
 
-namespace tFPDF;
-
-class TTFontFile
+class TtFontFile
 {
    private $gfWords = 0b1;
    private $gfScale = 0b1000;

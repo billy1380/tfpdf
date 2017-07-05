@@ -10,7 +10,7 @@ package tfpdf;
 namespace tFPDF;
 
 
-class PDFBarcode extends PDF
+class PdfBarcode extends Pdf
 {
 
     /**
